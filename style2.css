@@ -1,0 +1,261 @@
+style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      scroll-snap-type: y mandatory;   /* Snap beim Scrollen */
+      overflow-y: scroll;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    section {
+      scroll-snap-align: start;
+      min-height: 100vh;               /* jede Section füllt den Bildschirm */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    /* ---------- Seite 1 (Mond) ---------- */
+    .Seite2 {
+      
+      background: linear-gradient(rgb(0, 22, 21), rgb(0, 0, 0), rgb(0, 22, 21));
+    }
+
+    .MondContainer {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .MondBild img {
+      max-width: 1000px;
+      width: 100%;
+      height: auto;
+      border-radius: 1000%;
+       filter: grayscale(100%);  /* Schwarz-Weiß */
+
+    }
+
+    .MondTextContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .TextMond {
+      color: white;
+      font-size:100px;
+      margin: 0;
+      line-height: 1.1;
+      padding-top: 190px;
+      padding-right: 200px;
+    }
+
+    .UnterTextMond {
+      color: #ffffff91;
+      font-size: 20px;
+      margin: 0;
+      padding-left: 50px;
+    }
+
+    .Moon {
+      text-shadow: none;
+      transition: text-shadow 0.5s ease;
+    }
+
+    .Moon:hover {
+      text-shadow: 
+        0 0 20px #ffffff,
+        0 0 100px #ffffff;
+        cursor: pointer;
+    }
+
+    /* ---------- Seite 2 (Hello) ---------- */
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .MondContainer {
+        flex-direction: column;
+      }
+      .TextMond {
+        font-size: 50px;
+        text-align: center;
+      }
+      .UnterTextMond {
+        text-align: center;
+        padding-left: 0;
+      }
+    }
+
+    .UnterKapitel{
+        background-color: rgb(0, 22, 21);
+    }
+.Mond1 {
+    border-radius: 1000px;  /* Rundung des Containers */
+    overflow: hidden;     /* Bild wird auf die Rundung beschnitten */
+    max-width: 600px;     /* optional: Größe begrenzen */
+}
+
+.Mond1 img {
+    width: 100%;
+    height: auto;
+    display: block;       /* verhindert kleine Lücken unter dem Bild */
+}
+
+    .Mond1 {
+      box-shadow: none;
+      transition:  box-shadow 0.5s ease;
+      margin-right: 130px;
+    }
+
+
+        .MondBild img {
+      box-shadow: none;
+      transition:  box-shadow 0.5s ease;
+      
+    }
+
+    .MondBild img:hover {
+      box-shadow: 
+        0 0 300px #ffffff,
+        0 0 500px #ffffff;
+        cursor: pointer;
+    }
+
+.funfact{
+  color: white;
+  font-size: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  line-height: 1.8;
+  font-family: "poppins", sans-serif;
+}
+
+.Zeile1{
+  text-shadow: none;
+  transition: text-shadow 5s ease, color 5s ease;
+  color: #ffffff15;
+}
+
+.Zeile1:hover {
+  text-shadow: 
+    0 0 20px #ffffff,
+    0 0 2px #ffffff;
+    cursor: pointer;
+    color: white;
+}
+
+.Zeile2{
+  text-shadow: none;
+  transition: text-shadow 5s ease, color 5s ease;
+  color: #ffffff15;
+}
+.Zeile2:hover {
+  text-shadow: 
+    0 0 20px #ffffff,
+    0 0 2px #ffffff;
+    cursor: pointer;
+    color: white;
+}
+.Zeile3{
+  text-shadow: none;
+  transition: text-shadow 5s ease, color 5s ease;
+  color: #ffffff15;
+}
+.Zeile3:hover {
+  text-shadow: 
+    0 0 20px #ffffff,
+    0 0 2px #ffffff;
+    cursor: pointer;
+    color: white;
+}
+.Zeile4{
+  text-shadow: none;
+  transition: text-shadow 5s ease, color 5s ease;
+  color: #ffffff15;
+}
+.Zeile4:hover {
+  text-shadow: 
+    0 0 20px #ffffff,
+    0 0 2px #ffffff;
+    cursor: pointer;
+    color: white;
+}
+.Zeile5{
+  text-shadow: none;
+  transition: text-shadow 5s ease, color 5s ease;
+  color: #ffffff15;
+} 
+.Zeile5:hover {
+  text-shadow: 
+    0 0 20px #ffffff,
+    0 0 2px #ffffff;
+    cursor: pointer;
+    color: white;
+}
+
+.UnterKapitel2{
+    background: linear-gradient(rgb(0, 22, 21), rgb(0, 0, 0));
+    height: 150vh;
+}
+
+.UnterKapitel2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 5 Spalten */
+  gap: 10px; /* Abstand zwischen den Bildern */
+  justify-items: center; /* Bilder zentrieren */
+  align-items: center; /* optional, vertikal zentrieren */
+  padding: 100px;
+}
+
+.UnterKapitel2 img {
+  width: 100%;
+  max-width: 500px; /* Bilder skalieren automatisch */
+  height: auto;
+  border-radius: 5px; /* optional, runde Ecken */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  display: block; /* verhindert kleine Lücken */
+}
+
+.UnterKapitel2 img {
+  box-shadow: none;
+  transition:  box-shadow 0.5s ease;
+  border-radius: 10px;
+}
+.UnterKapitel2 img:hover {
+  box-shadow: 
+    0 0 20px #ffffff,
+    0 0 200px #ffffff;
+    cursor: pointer;
+}
+
+.BilderUberschrift {
+  grid-column: 1 / -1;   /* Überschrift über alle Spalten spannen */
+  text-align: center;    /* Text zentrieren */
+  font-size: 100px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+.textapollo {
+  font-size: 30px;
+  grid-column: 1 / -1;   /* über alle Spalten */;
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.UnterKapitel3{
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 22, 21));
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
